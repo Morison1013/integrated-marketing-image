@@ -1,0 +1,121 @@
+{
+  "id": "bilibili-content",
+  "name": "B站内容封面/视频封面",
+  "keywords": ["B站", "bilibili", "哔哩哔哩", "B站封面", "视频封面", "B站投稿", "UP主"],
+  "trigger_phrases": ["B站封面", "哔哩哔哩封面", "B站投稿封面", "UP主封面", "bilibili封面"],
+  "prompt_template": {
+    "type": "Bilibili video cover/content thumbnail",
+    "subject": "{content_topic}",
+    "style": "{content_style}",
+    "vibe": "{bilibili_aesthetic}",
+    "composition": "attention-grabbing, clickable",
+    "quality": "high visual appeal, B站风格"
+  },
+  "defaults": {
+    "style": "根据内容类型选择（知识科普/游戏/动漫/生活/Vlog）",
+    "vibe": "有趣、专业、有梗、吸引点击",
+    "composition": "9:16竖版或16:9横版"
+  },
+  "variants": {
+    "knowledge-science": {
+      "description": "知识科普类",
+      "overrides": {
+        "style": "专业严谨、清晰易懂、有数据可视化元素",
+        "vibe": "干货感、权威感、有趣易懂"
+      }
+    },
+    "game-content": {
+      "description": "游戏内容类",
+      "overrides": {
+        "style": "游戏元素、角色立绘、游戏场景",
+        "vibe": "热血、酷炫、游戏氛围"
+      }
+    },
+    "anime-fandom": {
+      "description": "动漫二次元类",
+      "overrides": {
+        "style": "二次元风格、角色形象、动漫元素",
+        "vibe": "可爱、热血、ACG氛围"
+      }
+    },
+    "lifestyle-vlog": {
+      "description": "生活Vlog类",
+      "overrides": {
+        "style": "真实生活场景、人物形象、日常氛围",
+        "vibe": "轻松、治愈、真实感"
+      }
+    },
+    "tech-review": {
+      "description": "科技评测类",
+      "overrides": {
+        "style": "产品展示、科技感、专业评测氛围",
+        "vibe": "专业、硬核、科技美学"
+      }
+    },
+    "music-dance": {
+      "description": "音乐舞蹈类",
+      "overrides": {
+        "style": "人物表演、舞台氛围、音乐元素",
+        "vibe": "活力、艺术感、表演张力"
+      }
+    },
+    "food-cooking": {
+      "description": "美食烹饪类",
+      "overrides": {
+        "style": "美食展示、烹饪过程、食欲感",
+        "vibe": "诱人、治愈、美食氛围"
+      }
+    },
+    "comedy-funny": {
+      "description": "搞笑娱乐类",
+      "overrides": {
+        "style": "夸张表情、搞笑场景、梗元素",
+        "vibe": "搞笑、有趣、有梗"
+      }
+    }
+  },
+  "category_tips": {
+    "knowledge": "标题醒目、数据可视化、知识点提炼、封面要有干货感",
+    "game": "游戏角色、游戏场景、战绩展示、装备展示",
+    "anime": "角色立绘、动漫场景、二次元元素、萌系/热血",
+    "lifestyle": "真实场景、人物形象、生活氛围、Vlog感",
+    "tech": "产品特写、科技感背景、参数对比、硬核感",
+    "music": "表演画面、舞台氛围、音乐元素、艺术感",
+    "food": "美食特写、烹饪过程、食欲感、治愈氛围",
+    "comedy": "夸张表情、搞笑场景、梗元素、趣味感"
+  },
+  "bilibili_aesthetics": {
+    "color": "B站常见色调：蓝白配色、粉色系、深色系",
+    "typography": "标题醒目、字体有设计感、可读性强",
+    "elements": "B站特色元素：播放量、点赞数、评论数、弹幕",
+    "layout": "主体突出、标题清晰、信息层级分明"
+  },
+  "examples": [
+    {
+      "name": "知识科普封面",
+      "prompt": "B站知识科普类视频封面，16:9横版。主题：{topic}。风格：专业严谨、清晰易懂。画面：知识可视化元素、数据图表、核心概念展示。色调：蓝白配色为主。标题「{title}」醒目位置，字体清晰有设计感。B站风格，干货感强，吸引点击。1920x1080px"
+    },
+    {
+      "name": "游戏内容封面",
+      "prompt": "B站游戏类视频封面，16:9横版。主题：{game_name}。风格：酷炫热血、游戏氛围。画面：游戏角色立绘、游戏场景、战绩展示。色调：深色系+霓虹色点缀。标题「{title}」醒目，游戏元素突出。B站风格，酷炫感强，吸引玩家点击。1920x1080px"
+    },
+    {
+      "name": "动漫二次元封面",
+      "prompt": "B站动漫类视频封面，16:9横版。主题：{anime_topic}。风格：二次元、可爱/热血。画面：角色形象、动漫场景、ACG元素。色调：粉色系/蓝色系。标题「{title}」二次元字体风格。B站风格，ACG氛围强，吸引动漫爱好者。1920x1080px"
+    },
+    {
+      "name": "生活Vlog封面",
+      "prompt": "B站生活Vlog类视频封面，9:16竖版或16:9横版。主题：{vlog_topic}。风格：真实生活、轻松治愈。画面：生活场景、人物形象、日常氛围。色调：暖色调、自然光感。标题「{title}」清晰醒目。B站风格，真实感强，治愈氛围。1080x1920px或1920x1080px"
+    },
+    {
+      "name": "科技评测封面",
+      "prompt": "B站科技评测类视频封面，16:9横版。主题：{product_name}评测。风格：专业硬核、科技美学。画面：产品特写、科技感背景、参数对比。色调：深色系+科技蓝。标题「{title}」醒目，参数信息清晰。B站风格，硬核感强，吸引科技爱好者。1920x1080px"
+    }
+  ],
+  "size_specs": {
+    "horizontal": "16:9 横版 1920x1080px（推荐）",
+    "vertical": "9:16 竖版 1080x1920px（手机端）",
+    "square": "1:1 方形 1080x1080px"
+  },
+  "supports_image_reference": true
+}
