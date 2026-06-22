@@ -1,0 +1,90 @@
+{
+  "id": "promo-banner",
+  "name": "促销海报/Banner",
+  "keywords": ["促销", "海报", "Banner", "广告图", "活动图", "promotion", "sale", "poster"],
+  "trigger_phrases": ["促销海报", "Banner", "广告图", "活动海报", "促销图", "campaign poster", "sale banner", "限时折扣"],
+  "prompt_template": {
+    "type": "promotional campaign banner",
+    "subject": "{product_description}",
+    "headline": "{headline_text}",
+    "price": "{price_info}",
+    "cta": "{cta_text}",
+    "urgency": "{urgency_element}",
+    "background": "{background_theme}",
+    "quality": "high-resolution marketing design, conversion-focused"
+  },
+  "defaults": {
+    "headline": "headline text",
+    "price": "",
+    "cta": "立即购买",
+    "urgency": "",
+    "background": "gradient matching campaign theme"
+  },
+  "variants": {
+    "flash-sale": {
+      "description": "限时折扣",
+      "overrides": {
+        "urgency": "countdown timer, limited time indicator",
+        "background": "high contrast, urgency colors",
+        "cta": "限时抢购"
+      }
+    },
+    "festive-sale": {
+      "description": "节日促销",
+      "overrides": {
+        "background": "festive themed with cultural elements",
+        "urgency": "节日限定, special occasion indicator"
+      }
+    },
+    "bundle-deal": {
+      "description": "套装优惠",
+      "overrides": {
+        "subject": "multiple products bundle display",
+        "price": "bundle price with individual prices comparison",
+        "headline": "套装更划算"
+      }
+    },
+    "new-launch": {
+      "description": "新品首发",
+      "overrides": {
+        "headline": "新品首发",
+        "urgency": "首发限定, early access indicator",
+        "cta": "抢先体验"
+      }
+    },
+    "clearance": {
+      "description": "清仓特卖",
+      "overrides": {
+        "urgency": "最后机会, clearance indicator",
+        "background": "clearance theme, markdown visual"
+      }
+    },
+    "member-exclusive": {
+      "description": "会员专享",
+      "overrides": {
+        "urgency": "会员专享, exclusive indicator",
+        "cta": "会员专享价"
+      }
+    }
+  },
+  "category_tips": {
+    "skincare": "rose gold accents, luxury gift aesthetic, transformation promise",
+    "fashion": "editorial style, model inclusion, aspirational lifestyle",
+    "home": "warm colors, lifestyle integration, comfort focus",
+    "furniture": "comfort hero, premium material, room integration",
+    "tech": "dark background, neon accents, futuristic typography",
+    "food": "warm colors, freshness cues, dynamic food elements"
+  },
+  "examples": [
+    "Promotional campaign banner. {product_description} centered hero on {background_theme}. Top headline 「{headline_text}」 in bold font size 36-48pt color {headline_color_hex}. Price display {price_info} with original price crossed out. Bottom CTA button 「{cta_text}」 color {cta_color_hex}. {urgency_element} integrated into layout. Clean marketing design, conversion-focused. 1080x1350px or 1080x1920px depending on platform",
+    "Sale event banner. {product_description} floating slightly on gradient {background_theme}. Bold promotional headline 「{headline_text}」 at top. Center shows product hero with price badge {price_info}. {urgency_element} creates urgency. Bottom {cta_text} button prominent. High visual impact, attention-grabbing layout. Platform-specific dimensions"
+  ],
+  "anti_ai_tips": "",
+  "style_lock_fields": {
+    "palette": "促销主题色 + 强调色",
+    "lighting": "明亮光线或戏剧性光线",
+    "vibe": "紧迫、兴奋、价值感",
+    "composition": "产品英雄 + 文案层级分明"
+  },
+  "supports_image_reference": true
+}
