@@ -1,0 +1,146 @@
+{
+  "id": "seedance-video-product",
+  "name": "Seedance产品展示视频",
+  "keywords": ["视频", "video", "产品视频", "展示视频", "宣传视频", "视频生成", "seedance"],
+  "trigger_phrases": ["产品展示视频", "宣传视频", "产品视频", "视频生成", "短视频"],
+  "prompt_template": {
+    "type": "Seedance 2.0 product showcase video",
+    "subject": "{product_description}",
+    "duration": "5-15秒",
+    "ratio": "9:16 / 16:9",
+    "timeline": "{shot_sequence}",
+    "sound": "{sound_design}",
+    "reference": "@Image {product_image}"
+  },
+  "defaults": {
+    "duration": "10秒",
+    "ratio": "9:16竖屏",
+    "timeline": "开场抓眼球→产品展示→细节特写→使用场景→品牌落版",
+    "sound": "轻快时尚配乐"
+  },
+  "variants": {
+    "brand-kv": {
+      "description": "品牌KV视频",
+      "overrides": {
+        "timeline": "0-3s:开场抓眼球→3-5s:产品全景展示→5-8s:细节特写→8-12s:使用场景→12-15s:品牌落版+Slogan",
+        "duration": "15秒"
+      }
+    },
+    "tvc-5shot": {
+      "description": "TVC 5镜头×3秒",
+      "overrides": {
+        "timeline": "SC1状态引入(3s)→SC2核心交互(3s)→SC3视觉奇观(3s)→SC4情绪释放(3s)→SC5品牌落版(3s)",
+        "duration": "15秒",
+        "shot_spec": {
+          "SC1": "远景/全景, 状态引入, 痛点/环境展示",
+          "SC2": "中景/特写, 产品介入, 核心物理细节",
+          "SC3": "特写/大特写, 极致光影, 材质转换",
+          "SC4": "近景/中景, 情绪反馈, 正面情感",
+          "SC5": "静态特写, 品牌落版, Logo+Slogan"
+        }
+      }
+    },
+    "feature-highlight": {
+      "description": "功能亮点展示",
+      "overrides": {
+        "timeline": "0-2s:功能特写→2-5s:功能演示→5-8s:效果展示→8-10s:品牌落版",
+        "duration": "10秒"
+      }
+    },
+    "usage-demo": {
+      "description": "使用演示视频",
+      "overrides": {
+        "timeline": "0-3s:准备阶段→3-6s:使用过程→6-9s:效果展示→9-12s:用户反馈→12-15s:CTA",
+        "duration": "15秒"
+      }
+    },
+    "unboxing": {
+      "description": "开箱展示",
+      "overrides": {
+        "timeline": "0-2s:包装展示→2-4s:拆封过程→4-8s:产品亮相→8-12s:配件展示→12-15s:产品特写",
+        "duration": "15秒"
+      }
+    },
+    "comparison": {
+      "description": "前后对比",
+      "overrides": {
+        "timeline": "0-5s:前状态(痛点)→5-10s:使用产品→10-15s:后状态(效果)",
+        "duration": "15秒"
+      }
+    }
+  },
+  "camera_movements": {
+    "push": "推镜头/缓慢推近 - 强调主体,营造紧张感",
+    "pull": "拉镜头/逐渐拉远 - 展现场景,营造疏离感",
+    "pan": "左摇/右摇/横移 - 左右展示环境",
+    "track": "跟随镜头/跟拍 - 跟随主体移动",
+    "orbit": "环绕镜头/360度旋转 - 360度展示主体",
+    "crane": "升镜头/降镜头/俯冲 - 从上往下或从下往上",
+    "dolly_zoom": "希区柯克变焦 - 背景压缩/拉伸效果",
+    "handheld": "手持晃动 - 纪实感/紧张感",
+    "probe": "探针穿梭 - 极近距离贴近产品表面",
+    "fpv": "FPV第一人称视角 - 沉浸式体验",
+    "macro_push": "微距快推 - 100mm微距镜头快推"
+  },
+  "lighting_vocabulary": {
+    "rim_light": "侧逆光/轮廓光 - 勾勒产品边缘",
+    "tyndall": "丁达尔效应 - 光束穿透微尘",
+    "sss": "次表面散射 - 温润半透明质感",
+    "top_light": "顶光 - 从上方照射",
+    "golden_halo": "金色光晕 - 高端大气氛围",
+    "cold_blue": "冷蓝光 - 现代主义调性",
+    "shallow_dof": "浅景深 - 背景虚化突出主体"
+  },
+  "material_vocabulary": {
+    "matte": "磨砂质感 - 细微纤维纹理",
+    "metallic": "金属光泽 - 反光强烈",
+    "amber": "琥珀透光 - 晶莹剔透",
+    "glass": "玻璃质感 - 透明反光",
+    "leather": "皮革纹理 - 高端奢华触感"
+  },
+  "sound_design": {
+    "bgm": {
+      "tiktok_pop": "TikTok热门轻快俏皮短节奏",
+      "epic": "史诗感大气磅礴",
+      "healing": "治愈系轻柔舒缓",
+      "tech": "科技感电子合成音",
+      "urgent": "紧迫感节奏加快",
+      "industrial": "工业重低音Techno"
+    },
+    "sfx": {
+      "unboxing": "开箱声（撕开胶带、打开包装）",
+      "usage": "产品使用声（按键、开关、液体流动）",
+      "ambient": "环境音（超市嘈杂、自然风声）",
+      "emotion": "情绪音效（惊喜声、满意叹息）"
+    },
+    "voice": {
+      "casual_us": "美式口语年轻随意",
+      "professional": "专业解说权威沉稳",
+      "excited": "兴奋推荐夸张热情",
+      "gentle": "温柔分享亲切柔和",
+      "cctv": "央视纪录片浑厚有力"
+    }
+  },
+  "examples": [
+    {
+      "name": "产品展示视频（10秒）",
+      "prompt": "高端商业广告风格，10秒，9:16竖屏，暖色调晨光氛围\n\n0-3秒：微距特写，产品材质细节展示，侧逆光勾勒轮廓\n3-6秒：中景环绕，产品360度展示，光影流转\n6-8秒：使用场景，产品在实际环境中的应用\n8-10秒：品牌落版，产品居中，Logo清晰浮现\n\n【声音】轻松爵士乐 + 环境音效\n【参考】@Image 产品外观图"
+    },
+    {
+      "name": "TVC 5镜头×3秒",
+      "prompt": "**风格基调**：高端奢华、电影质感。以\"产品品质升级\"为情绪动线，体现品牌调性。\n**影像质感**：胶片感色彩科学、高光柔和溢出\n**色彩与光线**：金色暖光为主，柔和漫射为辅\n\n**SC1 | 远景 35mm 平视 | 缓慢推近 | 3s**\n〔状态引入〕用户疲惫状态，场景环境展示，营造品牌氛围\n**♪ 环境音为主**\n\n**SC2 | 特写 85mm 俯视 | 缓慢环绕 | 3s**\n〔核心交互〕产品介入，核心物理细节展示，体现品牌质感\n**♪ 动作音效突出**\n\n**SC3 | 大特写 135mm 仰视 | 缓慢推拉 | 3s**\n〔视觉奇观〕极致光影，材质转换展现改变，强化品牌视觉冲击\n**♪ 音乐高潮**\n\n**SC4 | 近景 50mm 平视 | 缓慢推拉 | 3s**\n〔情绪释放〕用户情绪正面反馈，传递品牌情感\n**♪ 情感化音乐**\n\n**SC5 | 静态特写 100mm 居中固定 | 3s**\n〔品牌落版〕产品定海神针展示，Logo+Slogan自然呈现\n**♪ 品牌音效+渐隐余音**\n\n【参考】@Image 产品图"
+    }
+  ],
+  "multi_modal_reference": {
+    "image": "@Image 作为首帧/尾帧/角色/场景参考",
+    "video": "@Video 参考运镜方式/动作节奏",
+    "audio": "@Audio 用于配乐/对白参考"
+  },
+  "limitations": {
+    "face": "❌ 不支持写实真人脸部素材",
+    "files": "最多12个文件（图片≤9 + 视频≤3 + 音频≤3）",
+    "duration": "视频/音频参考总时长≤15秒",
+    "resolution": "生成分辨率720P为主"
+  },
+  "supports_image_reference": true
+}
