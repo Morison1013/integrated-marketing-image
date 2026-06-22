@@ -1,0 +1,7 @@
+.env
+.env.local
+.env.*
+generated-images/
+*.pyc
+__pycache__/outputs/
+test-output/
