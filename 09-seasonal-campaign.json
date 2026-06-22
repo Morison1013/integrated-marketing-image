@@ -1,0 +1,77 @@
+{
+  "id": "seasonal-campaign",
+  "name": "季节Campaign",
+  "keywords": ["季节", "四季", "campaign", "季节主题", "seasonal", "春夏秋冬", "年度campaign"],
+  "trigger_phrases": ["季节Campaign", "四季主题", "seasonal campaign", "春夏秋冬", "年度Campaign", "季节变体"],
+  "prompt_template": {
+    "type": "seasonal brand campaign grid",
+    "subject": "{product_description}",
+    "layout": "2x2 or 3x2 grid, one product across seasonal settings",
+    "spring": "pastel tones, blossoms, morning dew, soft light",
+    "summer": "bright warm tones, tropical elements, golden light",
+    "autumn": "warm amber, dried leaves, cinnamon, window light",
+    "winter": "cool blues, pine branches, frost, moonlight",
+    "quality": "8K, brand campaign photography, consistent product placement"
+  },
+  "defaults": {
+    "layout": "2x2 grid with thin white or brand-colored borders",
+    "consistency": "same product angle and size across all quadrants"
+  },
+  "variants": {
+    "four-seasons": {
+      "description": "经典四季",
+      "overrides": {
+        "layout": "2x2 grid, each quadrant a full seasonal scene"
+      }
+    },
+    "holiday-series": {
+      "description": "节日系列",
+      "overrides": {
+        "layout": "2x3 or 3x2 grid, holidays: 春节/元宵/清明/端午/七夕/中秋/重阳/圣诞",
+        "spring": "春节红灯笼、元宵汤圆",
+        "summer": "端午粽子、七夕鹊桥",
+        "autumn": "中秋月饼、重阳菊花",
+        "winter": "圣诞装饰、新年氛围"
+      }
+    },
+    "day-to-night": {
+      "description": "日夜变体",
+      "overrides": {
+        "layout": "2x2 grid, same scene at dawn/morning/afternoon/night"
+      }
+    },
+    "life-stages": {
+      "description": "人生阶段",
+      "overrides": {
+        "layout": "2x2 or 3x2 grid, product in different life stages: 单身/新婚/育儿/改善"
+      }
+    },
+    "room-series": {
+      "description": "空间系列",
+      "overrides": {
+        "layout": "2x3 grid, product in different rooms: 客厅/卧室/书房/餐厅/阳台/浴室"
+      }
+    }
+  },
+  "category_tips": {
+    "skincare": "春=焕新+花粉防护, 夏=防晒+清爽, 秋=保湿+修复, 冬=滋润+屏障",
+    "fashion": "季节穿搭风格变化、面料材质变化、色彩调性变化",
+    "home": "季节家居布置变化、色调调整、氛围变化",
+    "furniture": "季节舒适重点变化、材质适配、空间氛围",
+    "food": "季节食材变化、烹饪方式变化、餐桌氛围",
+    "fragrance": "季节香调匹配、氛围元素对应"
+  },
+  "examples": [
+    "Seasonal campaign 2x2 grid. Same {product_description} in four seasonal settings: Spring quadrant with cherry blossoms, soft morning light, pastel tones; Summer quadrant with tropical elements, golden sunlight, vibrant colors; Autumn quadrant with maple leaves, warm amber tones, window light; Winter quadrant with pine branches, frost details, cool blue moonlight. Consistent product angle and scale across all four. Thin {border_color_hex} borders between quadrants. Season labels 「春」「夏」「秋」「冬」 in elegant font. 8K brand campaign photography, 2000x2000px",
+    "Holiday campaign 3x2 grid. {product_description} in six holiday scenes: 春节 red lanterns and spring couplets; 元宵 lantern festival elements; 端午 dragon boat and zongzi; 七夕 romantic鹊桥 elements; 中秋 moon and mooncakes; 圣诞 pine tree and decorations. Each quadrant shows product integrated into specific holiday atmosphere. Holiday name labels 「{节日名}」 in appropriate seasonal font. 2000x3000px or 3000x2000px"
+  ],
+  "anti_ai_tips": "",
+  "style_lock_fields": {
+    "palette": "四季色系变化 + 产品固定色",
+    "lighting": "季节光线特征",
+    "vibe": "季节情绪调性",
+    "composition": "网格统一、产品角度一致",
+    "borders": "分割线颜色和宽度"
+  },
+  "supports_image_reference": true
+}
