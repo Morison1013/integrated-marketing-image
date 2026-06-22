@@ -1,0 +1,91 @@
+{
+  "id": "xhs-seeding",
+  "name": "小红书种草图文",
+  "keywords": ["小红书", "种草", "KOL", "种草图", "小红书图文", "笔记图", "博主图", "xhs", "red book"],
+  "trigger_phrases": ["小红书种草", "小红书图文", "KOL种草", "小红书笔记", "博主种草", "小红书推广", "小红书KOL"],
+  "prompt_template": {
+    "type": "authentic Xiaohongshu lifestyle photography",
+    "subject": "{product_description}",
+    "scene": "{lifestyle_scene}",
+    "vibe": "relaxed, aspirational, true-to-life",
+    "composition": "natural, slightly imperfect",
+    "quality": "iPhone original camera aesthetic, NOT professional photography"
+  },
+  "defaults": {
+    "scene": "real home environment with daily items",
+    "vibe": "cozy, aspirational but accessible",
+    "composition": "3/4 angle, casual framing"
+  },
+  "variants": {
+    "lifestyle-relaxed": {
+      "description": "松弛生活方式",
+      "overrides": {
+        "scene": "cozy living room or bedroom with soft natural light",
+        "vibe": "relaxed weekend atmosphere, achievable aspirational"
+      }
+    },
+    "morning-routine": {
+      "description": "晨间仪式",
+      "overrides": {
+        "scene": "morning bedroom scene, natural window light, coffee/tea setup",
+        "vibe": "fresh start of the day, self-care ritual"
+      }
+    },
+    "work-from-home": {
+      "description": "居家办公",
+      "overrides": {
+        "scene": "home office desk setup with laptop, plants, aesthetic desk accessories",
+        "vibe": "productive yet comfortable, work-life balance"
+      }
+    },
+    "self-care": {
+      "description": "自我关怀",
+      "overrides": {
+        "scene": "bathroom or bedroom self-care moment, skincare routine",
+        "vibe": "pampering, relaxation, personal time"
+      }
+    },
+    "outfit-of-day": {
+      "description": "OOTD穿搭",
+      "overrides": {
+        "scene": "mirror selfie corner, clean aesthetic background",
+        "vibe": "personal style expression, fashion inspiration"
+      }
+    },
+    "food-sharing": {
+      "description": "美食分享",
+      "overrides": {
+        "scene": "dining table or kitchen, natural food styling",
+        "vibe": "savoring moment, food appreciation"
+      }
+    }
+  },
+  "category_tips": {
+    "skincare": "show texture application, glass skin effect achievable, before/after subtle",
+    "fashion": "natural pose, fabric detail, styling tips, accessorizing",
+    "home-decor": "real living space, not showroom, achievable aesthetic",
+    "food": "natural lighting, real portions, casual plating",
+    "fitness": "active but not intense, wellness focus, achievable results",
+    "tech": "daily use context, not tech studio, lifestyle integration",
+    "furniture": "real home integration, comfort focus, lived-in feel"
+  },
+  "examples": [
+    "Authentic Xiaohongshu lifestyle photo. {product} in a cozy {scene} with soft natural window light. iPhone 14 Pro original camera aesthetic, slight warm color cast, visible minor imperfections, NOT professional photography, NOT retouched. The vibe is {vibe}, achievable aspirational lifestyle. Natural composition, slightly imperfect framing, product integrated naturally into daily life. 3:4 vertical aspect ratio for Xiaohongshu platform. Text overlay: 「{headline}」 in simple font at bottom",
+    "Xiaohongshu influencer sharing post. A {age}-year-old {persona} in their {scene}. The {product} naturally placed in the setting, showing real daily use. iPhone 14 Pro shot, natural lighting, Kodak Portra 400 color feel, visible skin texture, not smoothed. The mood is {vibe}. Caption placeholder 「{headline}」 at image bottom. 1080x1440px, Xiaohongshu standard format"
+  ],
+  "anti_ai_tips": {
+    "phone_model": "iPhone 14 Pro / iPhone 15 Pro 原相机",
+    "imperfections": "轻微噪点、毛孔可见、暖色偏移、不完美构图",
+    "environment": "真实家居、略微凌乱、生活用品、水渍、用过的毛巾",
+    "color_grade": "Kodak Portra 400 color feel",
+    "explicit_declare": "NOT professional photography, NOT AI-generated look, NOT retouched, NOT smoothed",
+    "avoid_words": "不要用 perfect, flawless, stunning, hyper-realistic"
+  },
+  "style_lock_fields": {
+    "palette": "柔和自然色系 + 1个产品匹配强调色",
+    "lighting": "自然窗光或柔和顶光",
+    "vibe": "松弛、可达成向往感",
+    "composition": "自然构图、略微不完美"
+  },
+  "supports_image_reference": true
+}
