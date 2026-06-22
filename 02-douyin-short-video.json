@@ -1,0 +1,95 @@
+{
+  "id": "douyin-short-video",
+  "name": "抖音短视频封面",
+  "keywords": ["抖音", "短视频", "TikTok", "抖音封面", "视频封面", "短视频图", "douyin", "tiktok"],
+  "trigger_phrases": ["抖音短视频", "抖音封面", "短视频封面", "TikTok视频", "抖音推广", "短视频广告"],
+  "prompt_template": {
+    "type": "engaging Douyin/TikTok video cover thumbnail",
+    "subject": "{product_or_person}",
+    "action": "{dynamic_action}",
+    "emotion": "{emotion_expression}",
+    "composition": "eye-catching, high contrast, hook in 3 seconds",
+    "quality": "high visual impact, attention-grabbing"
+  },
+  "defaults": {
+    "action": "dynamic movement or interaction with product",
+    "emotion": "excited, surprised, or joyful",
+    "composition": "centered hero, bold elements, 9:16 vertical"
+  },
+  "variants": {
+    "hook-impact": {
+      "description": "冲击钩子型",
+      "overrides": {
+        "action": "dramatic before/after reveal or surprising result",
+        "emotion": "shocked, amazed, or excited reaction",
+        "composition": "split screen comparison or dramatic reveal"
+      }
+    },
+    "story-tease": {
+      "description": "故事悬念型",
+      "overrides": {
+        "action": "intriguing moment that raises curiosity",
+        "emotion": "curious, questioning, anticipating",
+        "composition": "mysterious framing, incomplete reveal"
+      }
+    },
+    "tutorial-teaser": {
+      "description": "教程预告型",
+      "overrides": {
+        "action": "showing the result of a tutorial",
+        "emotion": "satisfied, proud of achievement",
+        "composition": "step number overlay, final result showcase"
+      }
+    },
+    "challenge-fun": {
+      "description": "挑战娱乐型",
+      "overrides": {
+        "action": "participating in a challenge or trend",
+        "emotion": "fun, playful, energetic",
+        "composition": "dynamic pose, movement blur, energy"
+      }
+    },
+    "live预告": {
+      "description": "直播预告型",
+      "overrides": {
+        "action": "streamer inviting to live session",
+        "emotion": "welcoming, excited, promotional",
+        "composition": "streamer hero shot with live indicator, time overlay"
+      }
+    },
+    "sale-urgency": {
+      "description": "促销紧迫型",
+      "overrides": {
+        "action": "showing deal or limited offer",
+        "emotion": "urgent, excited, deal-hunting",
+        "composition": "price highlight, countdown element, CTA button"
+      }
+    }
+  },
+  "category_tips": {
+    "skincare": "before/after reveal, texture close-up, reaction shot",
+    "fashion": "transformation reveal, outfit change, style surprise",
+    "food": "cooking reveal, taste reaction, final dish showcase",
+    "fitness": "workout moment, result reveal, transformation",
+    "tech": "feature reveal, unboxing moment, comparison",
+    "home": "organization reveal, transformation, DIY result",
+    "furniture": "comfort demonstration, style reveal, room transformation"
+  },
+  "examples": [
+    "Engaging Douyin video cover thumbnail. {product_or_person} in {dynamic_action} moment. High visual impact composition with {emotion_expression}. The image hooks viewer in first 3 seconds. Bold contrast, saturated colors matching platform aesthetic. Text overlay 「{headline}」 in bold font, product prominently visible. 9:16 vertical 1080x1920px for Douyin platform",
+    "TikTok-style attention-grabbing cover. {persona} showing {emotion_expression} while {dynamic_action}. Centered composition with product as hero. High saturation, dramatic lighting creating visual punch. Brief text 「{headline}」 overlaid. 1080x1920px, 9:16 aspect ratio optimized for mobile viewing"
+  ],
+  "anti_ai_tips": {
+    "motion_blur": "适度动态模糊增加真实动感",
+    "imperfect_composition": "略微偏移的构图增加真实感",
+    "natural_expression": "真实表情、不是完美模特脸",
+    "phone_aesthetic": "手机拍摄质感、不是电影级制作"
+  },
+  "style_lock_fields": {
+    "palette": "高饱和色系 + 强对比",
+    "lighting": "戏剧性光线或明亮自然光",
+    "vibe": "冲击、好奇、快乐",
+    "composition": "钩子构图、3秒吸引力"
+  },
+  "supports_image_reference": true
+}
