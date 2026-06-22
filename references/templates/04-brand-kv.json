@@ -1,0 +1,91 @@
+{
+  "id": "brand-kv",
+  "name": "品牌KV/主视觉",
+  "keywords": ["品牌KV", "KV", "主视觉", "Big Idea", "品牌视觉", "Campaign主图", "brand key visual", "campaign visual"],
+  "trigger_phrases": ["品牌KV", "主视觉", "Big Idea视觉", "Campaign主图", "品牌主视觉", "年度Campaign图"],
+  "prompt_template": {
+    "type": "brand campaign key visual",
+    "subject": "{brand_product_hero}",
+    "concept": "{big_idea_visualization}",
+    "mood": "{brand_emotional_tone}",
+    "composition": "hero-centric, aspirational, premium",
+    "quality": "8K, brand campaign photography, editorial grade"
+  },
+  "defaults": {
+    "concept": "product as hero with lifestyle integration",
+    "mood": "premium, aspirational, emotionally resonant",
+    "composition": "centered hero with atmospheric surround"
+  },
+  "variants": {
+    "premium-editorial": {
+      "description": "高端编辑大片",
+      "overrides": {
+        "mood": "luxury, editorial, magazine-cover worthy",
+        "composition": "hero product with premium lifestyle cues, magazine layout"
+      }
+    },
+    "emotional-storytelling": {
+      "description": "情感叙事",
+      "overrides": {
+        "concept": "visual story showing brand promise fulfilled",
+        "mood": "warm, human connection, emotional resonance",
+        "composition": "scene composition with product as emotional anchor"
+      }
+    },
+    "lifestyle-hero": {
+      "description": "生活方式英雄",
+      "overrides": {
+        "concept": "product integrated into aspirational lifestyle moment",
+        "mood": "desirable, achievable premium lifestyle",
+        "composition": "lifestyle scene with product as hero element"
+      }
+    },
+    "conceptual-art": {
+      "description": "概念艺术",
+      "overrides": {
+        "concept": "abstract or artistic visualization of brand concept",
+        "mood": "innovative, artistic, brand personality",
+        "composition": "artistic composition, creative framing"
+      }
+    },
+    "seasonal-festive": {
+      "description": "季节节日",
+      "overrides": {
+        "concept": "seasonal or festive theme integration",
+        "mood": "seasonal atmosphere, celebration mood",
+        "composition": "seasonal elements framing product hero"
+      }
+    },
+    "minimal-clean": {
+      "description": "极简干净",
+      "overrides": {
+        "concept": "clean minimalist hero presentation",
+        "mood": "modern, clean, premium simplicity",
+        "composition": "generous whitespace, minimal elements, pure hero"
+      }
+    }
+  },
+  "category_tips": {
+    "skincare": "glow effect, premium packaging, transformation promise",
+    "fashion": "editorial styling, aspirational look, brand identity",
+    "home-decor": "lifestyle integration, aesthetic living, design statement",
+    "furniture": "comfort hero, premium material, lifestyle integration",
+    "tech": "innovation hero, futuristic aesthetic, premium design",
+    "food": "artisan quality, premium ingredients, taste experience",
+    "fitness": "achievement hero, wellness lifestyle, aspiration"
+  },
+  "examples": [
+    "Brand campaign key visual. {brand_product_hero} as the centerpiece, visualizing the concept of {big_idea_visualization}. The mood is {brand_emotional_tone}. Premium lifestyle cues surrounding the hero product. 8K editorial grade photography, magazine-cover worthy composition. Text overlay: 「{slogan}」 in elegant font. Color palette: {brand_colors_hex}. Aspect ratio 3:4 or 16:9 depending on placement",
+    "Campaign Big Idea visual. {brand_product_hero} integrated into {concept}. The visual tells the story of {brand_promise}. {brand_emotional_tone} mood with premium atmospheric lighting. Hero-centric composition with product as emotional anchor. Slogan 「{slogan}」 integrated into layout. 8K, brand campaign photography quality, consistent with brand guidelines"
+  ],
+  "anti_ai_tips": "",
+  "style_lock_fields": {
+    "palette": "品牌标准色系 + 1-2辅助色",
+    "lighting": "符合品牌调性的专业光线",
+    "vibe": "品牌情绪调性",
+    "composition": "英雄构图、主次分明",
+    "slogan": "传播主张文字位置和字体",
+    "logo": "品牌Logo位置和尺寸"
+  },
+  "supports_image_reference": true
+}
